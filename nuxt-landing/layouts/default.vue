@@ -1,7 +1,7 @@
 <template>
   <div>
     <Navbar/>
-
+    <Slider/>
     <main>
       <div class="container">
           <nuxt/>
@@ -13,9 +13,11 @@
 
 <script>
 import Navbar from '@/components/Navbar'
+import Slider from '@/components/Slider'
 export default {
   components: {
-    Navbar
+    Navbar,
+    Slider
   }
 }
 </script>

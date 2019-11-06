@@ -13,5 +13,5 @@ export default {
   .empty-layout
     display: flex
     justify-content: center
-    padding-top: 5rem
+    padding-top: 100px
 </style>
