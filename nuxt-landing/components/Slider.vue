@@ -1,6 +1,5 @@
 <template>
-    <div class="container">
-      <div class="row">
+  <div class="slider" align-v="center">
         <b-carousel
           id="carousel-1"
           v-model="slide"
@@ -12,24 +11,25 @@
         >
           <!-- Slides with custom text -->
           <b-carousel-slide img-src="slide1.png">
-            <div class="slider-title ">
-              <h1>Design &#38; Branding</h1>
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <h1>Design &#38; Branding</h1>
+                <p>We Deliver Quality Results</p>
+              </div>
             </div>
-
-            <p>We Deliver Quality Results</p>
           </b-carousel-slide>
 
           <b-carousel-slide img-src="slide2.png">
-            <div class="slider-title ">
-              <h1>Design &#38; Branding</h1>
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <h1>Design &#38; Branding</h1>
+                <p>We Deliver Quality Results</p>
+              </div>
             </div>
-
-            <p>We Deliver Quality Results</p>
           </b-carousel-slide>
 
         </b-carousel>
-      </div>
-    </div>
+  </div>
 </template>
 
 <script>
@@ -54,17 +54,20 @@
 <style lang="sass">
 #carousel-1
   h1
+    font-family: Roboto, sans-serif
     color: white
     text-transform: uppercase
     font-size: 48px
+    background: black
   p
+    letter-spacing: 5px
+    font-family: Roboto, sans-serif
     padding-top: 35px
     color: black
     text-transform: uppercase
     font-size: 18px
-.slider-title
-  background: black
 .carousel-caption
-  bottom: 115px
-
+  bottom: 150px
+.slider
+  padding-bottom: 35px
 </style>

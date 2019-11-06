@@ -1,5 +1,4 @@
 <template>
-  <header id="nav" class="menu-bar">
     <div class="container">
       <div class="row d-flex justify-content-between">
         <div class="col-lg-2">
@@ -52,7 +51,6 @@
         </div>
       </div>
     </div>
-  </header>
 </template>
 
 <script>
@@ -77,6 +75,7 @@ export default {
 
 .nav-item
   @extend %message-shared
+  font-family: Roboto, sans-serif
   a
     @extend %message-shared
   a:hover
