@@ -1,9 +1,6 @@
 <template>
-  <section class="container">
-    <div>
-    <h1>help</h1>
+    <div class="main">
     </div>
-  </section>
 </template>
 
 <script>

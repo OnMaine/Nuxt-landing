@@ -1,21 +1,17 @@
 <template>
   <div id="app">
-    <div class="title-container">
-      <div>
-        <h3 class="title">
-          Our Projects
-        </h3>
-      </div>
-      <div class="filters">
-        <span class="filter" v-bind:class="{ active: currentFilter === 'ALL' }" v-on:click="setFilter('ALL')">ALL</span>
-        <span class="filter" v-bind:class="{ active: currentFilter === 'LOGO' }" v-on:click="setFilter('LOGO')">LOGO</span>
-        <span class="filter" v-bind:class="{ active: currentFilter === 'MOBILE APP' }" v-on:click="setFilter('MOBILE APP')">MOBILE APP</span>
-        <span class="filter" v-bind:class="{ active: currentFilter === 'WORDPRESS' }" v-on:click="setFilter('WORDPRESS')">WORDPRESS</span>
-        <span class="filter" v-bind:class="{ active: currentFilter === 'UI/IX' }" v-on:click="setFilter('UI/IX')">UI/IX</span>
-        <span class="filter" v-bind:class="{ active: currentFilter === 'BRANDING' }" v-on:click="setFilter('BRANDING')">BRANDING</span>
+    <div class="container">
+      <div class="title-container">
+        <div class="filters d-flex justify-content-between">
+          <div class="filter" v-bind:class="{ active: currentFilter === 'ALL' }" v-on:click="setFilter('ALL')">ALL</div>
+          <div class="filter" v-bind:class="{ active: currentFilter === 'LOGO' }" v-on:click="setFilter('LOGO')">LOGO</div>
+          <div class="filter" v-bind:class="{ active: currentFilter === 'MOBILE APP' }" v-on:click="setFilter('MOBILE APP')">MOBILE APP</div>
+          <div class="filter" v-bind:class="{ active: currentFilter === 'WORDPRESS' }" v-on:click="setFilter('WORDPRESS')">WORDPRESS</div>
+          <div class="filter" v-bind:class="{ active: currentFilter === 'UI/IX' }" v-on:click="setFilter('UI/IX')">UI/IX</div>
+          <div class="filter" v-bind:class="{ active: currentFilter === 'BRANDING' }" v-on:click="setFilter('BRANDING')">BRANDING</div>
+        </div>
       </div>
     </div>
-
     <transition-group class="projects" name="projects" tag="div" >
       <div class="project" v-if="currentFilter === project.category || currentFilter === 'ALL'" v-bind:key="project.title" v-for="project in projects">
         <div class="project-image-wrapper">
@@ -31,10 +27,10 @@
 
 <script>
 export default {
-	data(){
+  data(){
     return{
-		currentFilter: 'ALL',
-		projects: [
+    currentFilter: 'ALL',
+    projects: [
       {title: "1", image: "item7.png", category: 'LOGO'},
       {title: "2", image: "item10.png", category: 'BRANDING'},
       {title: "3", image: "item3.png", category: 'LOGO'},
@@ -44,14 +40,14 @@ export default {
       {title: "7", image: "item1.png", category: 'UI/IX'},
       {title: "8", image: "item8.png", category: 'MOBILE APP'},
       {title: "9", image: "item9.png", category: 'WORDPRESS'},
-		],
+    ],
     }
-	},
-	methods: {
-		setFilter: function(filter) {
-			this.currentFilter = filter;
-		}
-	}
+  },
+  methods: {
+    setFilter: function(filter) {
+      this.currentFilter = filter;
+    }
+  }
 }
 </script>
 
@@ -61,68 +57,62 @@ export default {
   background: #fafafa
 
 .title-container
-	display: flex
-	flex-direction: column
-  justify-content: center
-	align-items: center
-
-.title
-	font-size: 30pt
-	font-weight: normal
-
-.project-title
-  font-size: 16pt
+  display: flex
+  flex-direction: column
+  align-items: center
+.title-container
+  border-top: 2px solid #ebebeb
+  border-bottom: 2px solid #ebebeb
+  font-weight: bold
+  color: #888888
 
 .filter
-	font-family: arial
-	padding: 6px 6px
-	cursor: pointer
-	border-radius: 6px
-	transition: all 0.35s
-
-.filter.active
-	box-shadow: 0px 1px 3px 0px #00000026
+  font-family: arial
+  padding: 20px 20px 25px 20px
+  cursor: pointer
+  transition: all 0.35s
+  text-transform: uppercase
 
 .filter:hover
-	background: lightgray
+  box-shadow: 0px 1px 3px 0px #00000026
 
 .projects
-	margin-bottom: 50px
-	margin-top: 25px
-	display: flex
-	flex-wrap: wrap
-	justify-content: center
+  margin-bottom: 50px
+  margin-top: 25px
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
   align-items: center
 
 .projects-enter
-	transform: scale(0.5) translatey(-80px)
-	opacity: 0
+  transform: scale(0.5) translatey(-80px)
+  opacity: 0
 
 .projects-leave-to
-	transform: translatey(30px)
-	opacity: 0
+  transform: translatey(30px)
+  opacity: 0
 
 .projects-leave-active
-	position: absolute
-	z-index: -1
+  position: absolute
+  z-index: -1
 
 .project
-	transition: all .35s ease-in-out
-	margin: 10px
-	box-shadow: 0px 2px 8px lightgrey
-	border-radius: 3px
-	display: flex
-	flex-direction: column
-	align-items: center
+  transition: all .35s ease-in-out
+  margin: 10px
+  box-shadow: 0px 2px 8px lightgrey
+  border-radius: 3px
+  display: flex
+  flex-direction: column
+  align-items: center
 
 .project-image-wrapper
-	position: relative
+  position: relative
 
 .project-image
-	border-bottom-left-radius: 5px
-	border-bottom-right-radius: 5px
-	border-top-left-radius: 3px
-	border-top-right-radius: 3px
+  border-bottom-left-radius: 5px
+  border-bottom-right-radius: 5px
+  border-top-left-radius: 3px
+  border-top-right-radius: 3px
 
 .more
   button

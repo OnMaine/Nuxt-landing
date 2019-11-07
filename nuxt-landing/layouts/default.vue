@@ -8,7 +8,7 @@
           <nuxt/>
       </div>
     </main>
-
+    <Basemant/>
     </div>
 </template>
 
@@ -16,11 +16,13 @@
 import Navbar from '@/components/Navbar'
 import Slider from '@/components/Slider'
 import Portfolio from '@/components/Portfolio'
+import Basemant from '@/components/Basemant'
 export default {
   components: {
     Navbar,
     Slider,
-    Portfolio
+    Portfolio,
+    Basemant
   }
 }
 </script>
