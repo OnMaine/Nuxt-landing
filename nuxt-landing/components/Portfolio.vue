@@ -23,6 +23,9 @@
         </div>
       </div>
     </transition-group>
+    <div class="more d-flex justify-content-center">
+      <button type="button">Load More</button>
+    </div>
   </div>
 </template>
 
@@ -53,6 +56,10 @@ export default {
 </script>
 
 <style lang="sass">
+#app
+  padding: 35px 0 70px 0
+  background: #fafafa
+
 .title-container
 	display: flex
 	flex-direction: column
@@ -116,4 +123,24 @@ export default {
 	border-bottom-right-radius: 5px
 	border-top-left-radius: 3px
 	border-top-right-radius: 3px
+
+.more
+  button
+    font-size: 13px
+    color: white
+    background-color: #959595
+    border: 1px solid
+    border-radius: 5px
+    text-transform: uppercase
+    padding: 10px 25px 10px 25px
+    font-family: Roboto, sans-serif
+    cursor: pointer
+    outline: none
+    &:hover
+      background: transparent
+      border: 1px solid #959595
+      border-radius: 5px
+      color: #959595
+      font-weight: bold
+      transition: 0.5s
 </style>

@@ -68,6 +68,4 @@
     font-size: 18px
 .carousel-caption
   bottom: 150px
-.slider
-  padding-bottom: 35px
 </style>
