@@ -1,9 +1,12 @@
 <template>
   <section class="container">
     <div>
-      <h1>Help</h1>
+    
     </div>
   </section>
+  <div>
+
+  </div>
 </template>
 
 <script>
@@ -14,5 +17,3 @@ export default {
 </script>
 
 <style>
-
-</style>

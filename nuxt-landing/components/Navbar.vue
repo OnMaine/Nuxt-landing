@@ -3,7 +3,7 @@
       <div class="row d-flex justify-content-between">
         <div class="col-lg-2">
           <a class="navbar-brand" href="#">
-            <img class="asd" src="~/static/logo.png" alt="logo">
+            <img src="~/static/logo.png" alt="logo">
           </a>
         </div>
         <div class="col-lg-6 ml-auto align-self-center">
@@ -57,6 +57,7 @@
 export default {
 
 }
+
 </script>
 
 <style lang="sass">
