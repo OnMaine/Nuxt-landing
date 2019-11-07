@@ -1,12 +1,9 @@
 <template>
   <section class="container">
     <div>
-    
+    <h1>help</h1>
     </div>
   </section>
-  <div>
-
-  </div>
 </template>
 
 <script>
