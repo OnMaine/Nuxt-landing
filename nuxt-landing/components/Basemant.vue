@@ -2,7 +2,7 @@
 <div class="footer">
     <div class="footer-logo">
       <div class="col-lg-12">
-        <a class="navbar-brand" href="#">
+        <a class="footer-brand" href="#">
           <img src="~/static/logo.png" alt="logo">
         </a>
       </div>
@@ -58,8 +58,6 @@ export default {
 </script>
 
 <style lang="sass">
-.footer
-  padding-top: 65px
 .media-icon-box
   border-top: 2px solid #ebebeb
   border-bottom: 2px solid #ebebeb
@@ -82,4 +80,7 @@ export default {
     font-size: 14px
 .text-dark
   color: black
+.footer-logo
+  padding-top: 70px
+  padding-bottom: 50px
 </style>

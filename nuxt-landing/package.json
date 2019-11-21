@@ -17,7 +17,7 @@
     "bootstrap-vue": "^2.0.4",
     "masonry-layout": "^4.2.2",
     "node-sass": "^4.13.0",
-    "nuxt": "^2.0.0",
+    "nuxt": "^2.10.2",
     "sass-loader": "^8.0.0",
     "vue-masonry": "^0.11.8"
   },
