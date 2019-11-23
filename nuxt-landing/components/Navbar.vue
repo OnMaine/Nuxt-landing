@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="container navigation">
       <div class="row d-flex justify-content-between">
         <div class="col-lg-2">
           <a class="navbar-brand" href="#">

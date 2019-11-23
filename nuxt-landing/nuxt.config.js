@@ -18,7 +18,7 @@ module.exports = {
     link: [
       { rel: 'stylesheet', href: 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' },
       { rel: 'stylesheet', href: 'https://use.fontawesome.com/releases/v5.7.0/css/all.css'},
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap'},
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap'},
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap'}
     ],
 

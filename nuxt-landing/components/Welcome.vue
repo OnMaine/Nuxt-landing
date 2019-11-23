@@ -22,20 +22,20 @@ export default {
   background-image: url("~static/base.png")
   background-size: cover
   background-position: 95% 100%
-
-  font-family: Roboto Slab, sans-serif
+  font-family: Roboto, sans-serif
   text-transform: uppercase
   h1
     font-size: 48px
     color: white
     background: black
     text-align: center
-    margin-bottom: 45px
-    margin-top: 115px
+    margin: 115px 0 45px 0
+    letter-spacing: 5px
+    font-weight: lighter
   p
-  font-size: 18px
-  color: black
-  text-align: left
-  padding-bottom: 120px
-
+    font-size: 18px
+    color: black
+    text-align: left
+    padding-bottom: 120px
+    letter-spacing: 10px
 </style>

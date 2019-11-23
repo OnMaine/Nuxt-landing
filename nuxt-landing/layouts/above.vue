@@ -3,9 +3,9 @@
     <Navbar/>
     <Welcome/>
     <main>
-      <div class="container">
+      <section class="main-section">
           <nuxt/>
-      </div>
+      </section>
     </main>
     <Basemant/>
     </div>
@@ -25,5 +25,6 @@ export default {
 </script>
 
 <style lang="sass">
-
+.main-section
+  background-color: #fafafa
 </style>

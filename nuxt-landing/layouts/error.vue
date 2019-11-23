@@ -12,11 +12,5 @@ export default {
 </script>
 
 <style lang="sass">
-section
-  width: 600px
-  margin: 0 auto
-  padding-top: 5rem
 
-h1
-  color: red
 </style>
